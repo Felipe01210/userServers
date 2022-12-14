@@ -1,0 +1,14 @@
+<div class="row">
+    <div class="col">
+        <div class="card mt-2" *ngFor="let user of res">
+            <div class="card-header">{{user.name}}</div>
+            <div class="card-body">
+                <span><strong>User id:</strong>{{user.id}}</span>
+                <br>
+                <span><strong>User email: </strong>{{user.email}}</span>
+                <br>
+                <button [routerLink]="['/users', user.id, user.name]">{{user.name}} profile</button>
+            </div>
+        </div>
+    </div>
+</div>
