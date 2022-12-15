@@ -20,8 +20,4 @@ export class ServersComponent implements OnInit {
     return this.sservice.servers;
   }
 
-  onReload(){
-    // this.router.navigate(['servers'],{relativeTo: this.route})
-  }
-
 }

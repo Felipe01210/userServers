@@ -16,11 +16,10 @@ const routes: Routes = [
     },
     {
         path: 'users',
-        component: UsersComponent 
-    },
-    {
-        path: 'users/:id/:name',
-        component: UserComponent
+        component: UsersComponent,
+        children: [
+            { path: ':id/:name', component: UserComponent}
+        ]
     },
     {
         path: 'servers',

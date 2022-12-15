@@ -35,8 +35,8 @@ export class ServersService {
     return[...this._servers]
   }
 
-  getServer(id:number){
-    return this.servers.filter(server=>server,id==id)
+  getServer(id:number):Server{
+    return this.servers[id-1]
   }
 
   getUsers():Observable<User[]>{

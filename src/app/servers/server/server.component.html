@@ -7,7 +7,7 @@
             <div class="card-body">
                 <h5 class="card-title">Server status</h5>
                 <p class="card-text">{{server.status}}</p>
-                <button [routerLink]="['/servers', server.id, 'edit']" [queryParams]="{allowEdit: '1'}" fragment="loading">Edit Server</button>
+                <button class="btn btn-primary" (click)="onEdit()">Edit server</button>
             </div>
         </div>
     </div>

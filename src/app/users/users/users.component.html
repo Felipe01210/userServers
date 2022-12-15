@@ -7,8 +7,13 @@
                 <br>
                 <span><strong>User email: </strong>{{user.email}}</span>
                 <br>
-                <button [routerLink]="['/users', user.id, user.name]">{{user.name}} profile</button>
+                <button [routerLink]="[user.id, user.name]">{{user.name}} profile</button>
             </div>
         </div>
     </div>
 </div>
+
+<hr>
+<hr>
+
+<router-outlet></router-outlet>
